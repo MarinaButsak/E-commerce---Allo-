@@ -1,30 +1,26 @@
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({ ecommerce: null });  // clear the previous ecommerce object.
 dataLayer.push({
-  event: "add_to_cart",
+  event: "add_to_cart",                 // name of the event. In this case, it always must be add_to_cart
   ecommerce: {
-    currency: "USD",
-    value: 7.77,
-    items: [
+    currency: "UAH",                 // we transfer currency code follow ISO standard
+    value: 7.77,                     // insert an actual product price. Don't include currency code
+    items: [                         // an array where all currently viewed products must be included
     {
-      item_id: "SKU_12345",
-      item_name: "Stan and Friends Tee",
-      affiliation: "Google Merchandise Store",
-      coupon: "SUMMER_FUN",
-      discount: 2.22,
-      index: 0,
-      item_brand: "Google",
-      item_category: "Apparel",
-      item_category2: "Adult",
-      item_category3: "Shirts",
-      item_category4: "Crew",
-      item_category5: "Short sleeve",
-      item_list_id: "related_products",
-      item_list_name: "Related Products",
+      item_id: "935799",                            // insert an actual product ID
+      item_name: "Samsung Galaxy S22 8/256 Green",  // insert an actual product name
+      affiliation: "ALLO",                          // insert an actual affiliation name
+      discount: 2.22,                               // insert discount value associated with the item
+      index: 1,                                     // position of the item in a list. Count the item's position in the list from 1, rather than 0.
+      item_brand: "Samsung",                       //  insert an actual product brand
+      item_category: "Інтернет магазин",                // insert an actual product top-level category
+      item_category2: "Смартфони і мобільні телефони",  // if it is possible to drill down the categories
+      item_category3: "Смартфони і мобільні телефони Samsung",
+      item_category4: "undefined",                      // if the product's category level does not exist - use undefined 
+      item_list_id: "related_products",                 // insert an actual product variant
+      item_list_name: "Ви дивилися",                   // the name of the list in which the item was presented to the user
       item_variant: "green",
-      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-      price: 9.99,
-      quantity: 1
-    }
+      price: 7.77,                                      // insert an actual product price. Don't include currency code
+          }
     ]
   }
 });
