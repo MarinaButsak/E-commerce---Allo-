@@ -20,7 +20,8 @@ dataLayer.push({
       item_list_name: "Ви дивилися",                   // the name of the list in which the item was presented to the user
       item_variant: "green",
       price: 7.77,                                      // insert an actual product price. Don't include currency code
-          }
+      quantity: 1                                       // product quantity of how many products were added to a cart
+     }
     ]
   }
 });
