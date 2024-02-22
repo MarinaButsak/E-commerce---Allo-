@@ -22,8 +22,7 @@ dataLayer.push({
     {
       item_id: "1023775",
       item_name: "Samsung Galaxy S24 Ultra 12/1Tb Gray",
-      affiliation: "Google Merchandise Store",
-      coupon: "ALLO",
+      affiliation: "ALLO",
       discount: 3.33,
       index: 1,
       item_brand: "Samsung",
