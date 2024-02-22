@@ -3,23 +3,24 @@ dataLayer.push({
   event: "add_to_wishlist",                 // name of the event. In this case, it always must be add_to_wishlist
   ecommerce: {
     currency: "UAH",                 // we transfer currency code follow ISO standard
-    value: 7.77,                     // insert an actual product price. Don't include currency code
-    items: [                         // an array where all currently viewed products must be included
+    value: 7.77,                     // insert an actual product price. Number or a string. Don't include currency code
+    items: [                         // an array with a product (or multiple products) that was added to a wishlist
     {
       item_id: "935799",                            // insert an actual product ID
       item_name: "Samsung Galaxy S22 8/256 Green",  // insert an actual product name
       affiliation: "ALLO",                          // insert an actual affiliation name
       discount: 2.22,                               // insert discount value associated with the item. If there is not discount - use undefined 
-      index: 1,                                     // position of the item in a list. Count the item's position in the list from 1, rather than 0.
+      index: 1,                                     // if a product is added to wishlist directly from product list, add the position in the list here
       item_brand: "Samsung",                       //  insert an actual product brand
       item_category: "Інтернет магазин",                // insert an actual product top-level category
       item_category2: "Смартфони і мобільні телефони",  // if it is possible to drill down the categories
       item_category3: "Смартфони і мобільні телефони Samsung",
       item_category4: "undefined",                      // if the product's category level does not exist - use undefined 
-      item_list_id: "related_products",                 // insert an actual product variant
-      item_list_name: "Ви дивилися",                   // the name of the list in which the item was presented to the user
-      item_variant: "green",
-      price: 7.77,                                      // insert an actual product price. Don't include currency code
+      item_list_id: "ви_дивилися",                 // if a product is added to wishlist directly from product list, add the list id here
+      item_list_name: "Ви дивилися",                    // if a product is added to wishlist directly from product list, add the list name here
+      item_variant: "green",                            // insert an actual product сolor
+      price: 7.77,                                      // insert an actual product price. Number or a string. Don't include currency code
+      quantity: 1                                       // product quantity of how many products were added to a wishlist
           }
     ]
   }
