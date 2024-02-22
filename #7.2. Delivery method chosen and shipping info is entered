@@ -1,11 +1,11 @@
-dataLayer.push({ ecommerce: null });  // clear the previous ecommerce object.
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "add_shipping_info",                      // name of the event. In this case, it always must be add_shipping_info
+  event: "add_shipping_info",         // name of the event. In this case, it always must be add_shipping_info
   ecommerce: {
-    currency: "UAH",                              // we transfer currency code follow ISO standard
-    value: 7.77,                                 // insert an actual product price. Number or a string. Don't include currency code
-    shipping_tier: "Самовивіз з магазину АЛЛО"  // name of the delivery method        
-    items: [                                   // an array with all products
+    currency: "UAH",                 // we transfer currency code follow ISO standard
+    value: 7.77,                     // insert an actual product price. Number or a string. Don't include currency code
+    shipping_tier: "Самовивіз з магазину Алло", // name of the delivery method 
+    items: [                             // an array with all products
     {
       item_id: "935799",                            // insert an actual product ID
       item_name: "Samsung Galaxy S22 8/256 Green",  // insert an actual product name
@@ -18,10 +18,10 @@ dataLayer.push({
       item_category3: "Смартфони і мобільні телефони Samsung",
       item_list_id: "ви_дивилися",                     // insert an actual product variant
       item_list_name: "Ви дивилися",                   // the name of the list in which the item was presented to the user
-      item_variant: "green",
-      price: 7.77,                                      // insert an actual product price. Don't include currency code
-      quantity: 1                                       // product quantity during the checkout
-          }
+      item_variant: "green",                            // insert an actual product color
+      price: 7.77,                                      // insert an actual product price. Number or a string. Don't include currency code
+      quantity: 1                                       // product quantity in the cart
+    }
     ]
   }
 });
