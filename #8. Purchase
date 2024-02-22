@@ -15,20 +15,18 @@ dataLayer.push({
       index: 1,                                    // position of the item in a list. Count the item's position in the list from 1, rather than 0.
       item_brand: "Samsung",                       //  insert an actual product brand
       item_category: "Інтернет магазин",                 // insert an actual product top-level category
-      item_category2: "Смартфони і мобільні телефони",  // if it is possible to drill down the categories
+      item_category2: "Смартфони і мобільні телефони",  // if it is possible to drill down the categories. Use item_category2, item_category3, etc. Can use from item_category up to item_category5
       item_category3: "Смартфони і мобільні телефони Samsung", 
-      item_category4: "undefined",                     // if the product's category level does not exist - use undefined 
       item_list_id: "ви_дивилися",                // insert an actual product variant
       item_list_name: "Ви дивилися",                   // the name of the list in which the item was presented to the user
       item_variant: "green",                             // insert an actual product сolor
-      price: 7.77,                                       // insert an actual product price. Don't include currency code
-      quantity: 1                                        // product quantity. In case of view_item_list, it will usually be equal to 1
+      price: 7.77,                                       // insert an actual product price. Number or a string. Don't include currency code
+      quantity: 1                                        // product quantity
     },
     {
       item_id: "1023775",
       item_name: "Samsung Galaxy S24 Ultra 12/1Tb Gray",
-      affiliation: "Google Merchandise Store",
-      coupon: "ALLO",
+      affiliation: "ALLO",
       discount: 3.33,
       index: 1,
       item_brand: "Samsung",
